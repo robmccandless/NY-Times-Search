@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
     <title>NYT API search</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
             <p>End Year (Optional):</p>
             <input id="end-year" type="text" class="form-control" aria-describedby="basic-addon1">
             <br></br>
-            <button id="search-btn" type="button" class="btn btn-light">Search</button>
+            <button id="search-btn" type="button" class="btn btn-light"><span class="btn-label"><i class="glyphicon glyphicon-search">Search</button></i></span>
             <button id="clear-btn" type="button" class="btn btn-light">Clear Results</button>
           </blockquote>
         </div>
@@ -47,16 +48,6 @@
           Top Articles
         </div>
     </div>
-    <script type="text/javascript">
-    $("#search-btn").on("click", function() {
-        alert($("#term").val())
-        alert($("#inputGroupSelect01").val())
-
-    })
-    // $("#term").on("click", function() {
-    //     alert($("#term").val())
-    // })
-    </script>
     
 </body>
 </html>
