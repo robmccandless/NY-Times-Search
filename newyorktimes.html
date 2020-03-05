@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>NYT API search</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">New York Times Search</h1>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+          Search Parameters
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Search Term:</p>
+            <input type="text" class="form-control" id="term" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+            
+            <p>Number of Records to Retrive:</p>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+            <p>Start Year (Optional):</p>
+            <input id="start-year" type="text" class="form-control" aria-describedby="basic-addon1">
+
+            <p>End Year (Optional):</p>
+            <input id="end-year" type="text" class="form-control" aria-describedby="basic-addon1">
+            <br></br>
+            <button id="search-btn" type="button" class="btn btn-light">Search</button>
+            <button id="clear-btn" type="button" class="btn btn-light">Clear Results</button>
+          </blockquote>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+          Top Articles
+        </div>
+    </div>
+    <script type="text/javascript">
+    $("#search-btn").on("click", function() {
+        alert($("#term").val())
+        alert($("#inputGroupSelect01").val())
+
+    })
+    // $("#term").on("click", function() {
+    //     alert($("#term").val())
+    // })
+    </script>
+    
+</body>
+</html>
